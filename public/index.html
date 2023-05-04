@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOKEPON</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <section class="seleccion" id="seleccion de mascota">
+    <h1 id="titulo" class="titulo">MOKEPON!!!!🔥💧🪴</h1>
+    <h2 class="elige-mascota">Elige tu mascota:</h2>
+    <div id="contenedor-tarjetas" class="tarjetas"> 
+     
+    </div>
+    <button id="boton-seleccionar">seleccionar</button>
+  </section>
+  <section id="verMapa"">
+    <h2 class="tituloCanvas">Recorre el mapa con tu Mokepon</h2>
+    <canvas id="mapa"></canvas>
+    <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverArriba()" onmousedown="moverArriba()">Arriba</button>
+    <div class="botones">
+      <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverIzquierda()" onmousedown="moverIzquierda()">Izquierda</button>
+      <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverAbajo()" onmousedown="moverAbajo()">Abajo</button>
+      <button ontouchend="detenerMovimiento()" onmouseup="detenerMovimiento()" ontouchstart="moverDerecha()" onmousedown="moverDerecha()">Derecha</button>
+  </div>
+  </section>
+  <section class="seleccion-ataque" id="seleccion de ataque">
+    <h1 id="titulo" class="titulo">MOKEPON!!!!🔥💧🪴</h1>
+    <h2 class="elige-ataque">Elige tu ataque:</h2>
+  <div>
+    <div id="contenedor-ataques" class="tarjetas-ataque">
+  </div>
+  </div>
+    <div class="mensajes"id=" Mensajes ">
+      <div class="Resultado">
+      <p id="resultado">Mucha suerte</p>
+    </div>
+      <section id="REINICIAR">
+        <button id="boton-Reiniciar">REINICIAR</button>
+      </section>
+    </div>
+  <div class="ataques">
+    <div class="Cosas-Jugador">
+      <p id="Nombre-Mascota"></p>
+      <p id="vidas">0</p>
+      <div id="ataquejugador"></div>
+    </div>
+    <div class="Cosas-PC">
+      <p id="Mascota-Enemigo"></p>
+      <p id="vidas-enemigo">0</p>
+      <div id="ataqueEnemigo"></div>
+    </div>
+  </div>  
+  </section>
+  <script src="js/code.js"></script>
+</body>
+</html>

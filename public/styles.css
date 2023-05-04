@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nabla&family=Press+Start+2P&family=Righteous&display=swap');
+
+body{
+    background-image:url(https://www.gratistodo.com/wp-content/uploads/2021/10/fondos-negros-gratistodo.com-22.jpg) ;
+    display: flex;
+    justify-content: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.titulo {
+    color:whitesmoke;
+    width:450px;
+    height:50px;
+    background-color: transparent;
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.elige-mascota{
+    color: whitesmoke;
+    font-size:20px;
+}
+.seleccion{
+    height: min-content;
+    width: min-content;
+    display:flex ;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border: 1px;
+    box-sizing:border-box ;
+    border-radius: 20px;
+    background-color:
+    rgba(255, 255, 255, .05);
+    box-shadow: 
+    0 0 5px
+    rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+#boton-seleccionar{
+    background-color: transparent;
+    box-sizing:border-box;
+    padding:10px;
+    margin:15px;
+    display: flex;
+    justify-content:center;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    cursor: pointer;
+}
+    #boton-seleccionar:hover {
+    background-color: #0A2647;
+  }
+  
+    #boton-seleccionar:focus {
+    outline: none;
+  }
+  
+  #boton-seleccionar:active {
+    background-color: #0A2647;
+    transform: translateY(2px); 
+  }
+.tarjeta-de-mokepon{
+    height: 160px;
+    background-color: transparent;
+    box-sizing:border-box;
+    padding:10px;
+    margin:15px;
+    display: flex;
+    justify-content:center;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 20px;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+    .tarjeta-de-mokepon:hover {
+    background-color: #0A2647; 
+  }
+  
+    .tarjeta-de-mokepon:focus {
+    outline: none; 
+  }
+  
+  .tarjeta-de-mokepon:active {
+    background-color: #0A2647; 
+    transform: translateY(2px); 
+  }
+  .tarjeta-de-mokepon:checked{
+    background-color:#0A2647;
+  }
+.tarjetas, .tarjetas-ataque{
+    display: flex;
+    gap:10px;
+}
+.seleccion-ataque{
+
+    display:flex ;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    border:1px;
+    color: whitesmoke;
+    border-radius: 20px;
+    background-color:
+    rgba(255, 255, 255, .05);
+    box-shadow: 
+    0 0 5px
+    rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+}
+.mensajes{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    align-items: center;
+    justify-content:center;
+    border-radius: 20px;
+    background-color:
+    rgba(255, 255, 255, .05);
+    box-shadow: 
+    0 0 5px
+    rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(50px);
+    margin: 20px;
+}
+.image{
+    height: 120px;
+    width: 140px;
+}
+input{
+    display: none;
+}
+.text{
+    display: flex;
+    transform: rotate(-90deg);
+}
+.tarjeta-de-mokepon-ataque{
+    height: 50px;
+    width: 100px;
+    background-color: transparent;
+    box-sizing:border-box;
+    padding:10px;
+    margin:15px;
+    justify-content:center;
+    align-items: center;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    border-radius: 20px;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+.tarjeta-de-mokepon-ataque:hover {
+    background-color: #0A2647;
+  }
+  
+    .tarjeta-de-mokepon-ataque:focus {
+    outline: none;
+  }
+  
+  .tarjeta-de-mokepon-ataque:active {
+    background-color: #0A2647;
+    transform: translateY(2px); 
+  }
+
+.elige-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+#resultado{
+    width: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.Resultado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#boton-Reiniciar{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid;
+    margin: 10px;
+    box-sizing: border-box;
+}
+    #boton-Reiniciar:hover {
+    background-color: #0A2647;
+  }
+  
+    #boton-Reiniciar:focus {
+    outline: none;
+  }
+  
+    #boton-Reiniciar:active {
+    background-color: #0A2647;
+    transform: translateY(2px); 
+  }
+  .ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-column-gap:100px;
+  }
+.Cosas-Jugador, .Cosas-PC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media(max-width:960px){ 
+  .tarjetas, .tarjetas-ataque{
+  flex-direction: column; 
+  }
+
+}
+#ataquejugador, #ataqueEnemigo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#verMapa{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#verMapa button{
+    height: 40px;
+    width: 130px;
+    background-color: transparent;
+    margin: 10px 0;
+    border:1px solid whitesmoke;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#verMapa button:hover {
+  background-color: #0A2647;
+}
+
+#verMapa button:focus {
+  outline: none;
+}
+
+#verMapa button:active {
+  background-color: #0A2647;
+  transform: translateY(2px); 
+}
+  
+
+#mapa{
+  border-radius: 20px;
+}
+.tituloCanvas{
+  color:whitesmoke;
+  background-color: transparent;
+  display: flex;
+  justify-content:center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media(max-width:500px){ 
+  .tituloCanvas{
+    font-size:small;
+  }
+  .botones{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ }
+  }
+
+
+  
