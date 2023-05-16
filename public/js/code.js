@@ -83,7 +83,7 @@ class Mokepon{
     }
 }
 let HIPOGE = new Mokepon("Hipodoge", "/assets/Hipoge.png",5, "/assets/Copia de Hipoge.png")
-let CAPIPEGO = new Mokepon("Capipepo", "/assets/capipego.png" , 5, "/assets/Copia de capipego.png")
+let CAPIPEGO = new Mokepon("Capipepo", "/public/assets/capipego.png" , 5, "/assets/Copia de capipego.png")
 let RATIGUEYA = new Mokepon("Ratigueya", "/assets/Ratigueya.png", 5, "/assets/Copia de Ratigueya.png")
 
 const HIPOGEataques = [
