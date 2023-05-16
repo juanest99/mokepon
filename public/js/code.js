@@ -45,7 +45,7 @@ let countdown=3
 let lienzo = mapa.getContext("2d")//con esto ceramos el contecto y se nos permite realizar un dibujo en el canvas 
 let intervalo
 let mapaBackgrond = new Image()
-mapaBackgrond.src = "/assets/mokemap.png"
+mapaBackgrond.src = "/public/assets/mokemap.png"
 let alturaBuscada
 let anchoMapa = window.innerWidth - 20
 const anchoMaximo= 540
@@ -82,9 +82,9 @@ class Mokepon{
            )
     }
 }
-let HIPOGE = new Mokepon("Hipodoge", "/assets/Hipoge.png",5, "/assets/Copia de Hipoge.png")
-let CAPIPEGO = new Mokepon("Capipepo", "/public/assets/capipego.png" , 5, "/assets/Copia de capipego.png")
-let RATIGUEYA = new Mokepon("Ratigueya", "/assets/Ratigueya.png", 5, "/assets/Copia de Ratigueya.png")
+let HIPOGE = new Mokepon("Hipodoge", "/public/assets/Hipoge.png",5, "/public/assets/Copia de Hipoge.png")
+let CAPIPEGO = new Mokepon("Capipepo", "/public/assets/capipego.png" , 5, "/public/assets/Copia de capipego.png")
+let RATIGUEYA = new Mokepon("Ratigueya", "/public/assets/Ratigueya.png", 5, "/public/assets/Copia de Ratigueya.png")
 
 const HIPOGEataques = [
     {nombre:"💧💧", id:"boton-agua"}, 
@@ -443,13 +443,13 @@ function mensajeFinal(resultadoFinal){
                         let mokeponEnemigo= null
                         const mokeponNombre = enemigo.mokepon.nombre|| ""
                         if(mokeponNombre == "Hipodoge"){
-                        mokeponEnemigo = new Mokepon("Hipodoge", "/assets/Hipoge.png",5, "/assets/Copia de Hipoge.png", enemigo.id)
+                        mokeponEnemigo = new Mokepon("Hipodoge", "/public/assets/Hipoge.png",5, "/public/assets/Copia de Hipoge.png", enemigo.id)
                         }
                         else if(mokeponNombre == "Capipepo"){
-                        mokeponEnemigo = new Mokepon("Capipepo", "/assets/capipego.png" , 5, "/assets/Copia de capipego.png", enemigo.id)
+                        mokeponEnemigo = new Mokepon("Capipepo", "/public/assets/capipego.png" , 5, "/public/assets/Copia de capipego.png", enemigo.id)
                         }
                         else if (mokeponNombre == "Ratigueya"){
-                        mokeponEnemigo = new Mokepon("Ratigueya", "/assets/Ratigueya.png", 5, "/assets/Copia de Ratigueya.png", enemigo.id)
+                        mokeponEnemigo = new Mokepon("Ratigueya", "/public/assets/Ratigueya.png", 5, "/public/assets/Copia de Ratigueya.png", enemigo.id)
                         }
                         mokeponEnemigo.x = enemigo.x
                         mokeponEnemigo.y = enemigo.y
